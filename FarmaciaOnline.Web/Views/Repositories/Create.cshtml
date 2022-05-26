@@ -1,0 +1,30 @@
+﻿@model FarmaciaOnline.Web.Models.Repository
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" type="text/css"
+href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+ <link rel="stylesheet" href="~/lib/font-awesome/css/fontawesome.css" />
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/regular.min.css">
+<link rel="stylesheet" href="~/lib/Font-Awesome/css/solid.min.css">
+<br />
+
+<h1>Create</h1>
+
+<h4>Repository</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <partial name="_Repository"/>
+            <div class="form-group">
+              <input type="submit" value="Create" class="btn btn-primary" />
+              <a asp-action="Index" class="btn btn-success">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
