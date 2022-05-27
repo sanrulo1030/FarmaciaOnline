@@ -31,8 +31,8 @@ namespace FarmaciaOnline.Web.Data.Entities
         //TODO: Pending to put the correct paths
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-            ? $"https://localhost:44390/images/noimage.png"
-            : $"https://FarmaciaOnline.blob.core.windows.net/users/{ImageId}";
+            ? $"https://farmaciaonlineweb.azurewebsites.net/images/noimage.png"
+            : $"https://farmaciaonlineweb.blob.core.windows.net/users/{ImageId}";
 
         [Display(Name = "User Type")]
         public UserType UserType { get; set; }

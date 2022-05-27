@@ -11,7 +11,7 @@ namespace FarmaciaOnline.Web.Models
         //TODO: Pending to put the correct paths
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-        ? $"https://farmaciaonlinedemo.blob.core.windows.net/categories/{ImageId}"
+        ? $"https://farmaciaonlineweb.azurewebsites.net/images/noimage.png/{ImageId}"
         : $"https://farmaciaonlinedemo.blob.core.windows.net/products/{ImageId}";
     }
 }

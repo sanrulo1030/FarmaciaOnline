@@ -26,7 +26,7 @@ namespace FarmaciaOnline.Web.Models
         //TO DO: Pendiente cambiar los paths por los de Azure
         [Display(Name = "Image")]
         public string ImageFullPath => ProductImages == null || ProductImages.Count == 0
-        ? $"https://localhost:5001/images/noimage.png"
+        ? $"https://farmaciaonlineweb.azurewebsites.net/images/noimage.png"
         : ProductImages.FirstOrDefault().ImageFullPath;
     }
 

@@ -14,9 +14,9 @@ namespace FarmaciaOnline.Web.Models
         //TODO: Pending to put the correct paths
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-        ? "$https://localhost:5001/images/noimage.png"// luego cambiamos esta url por la de 
-                                                       //Azure
-        : $"https://farmaciaonlinedemo.Web.blob.core.windows.net/categories/{ImageId}"; // blob en Azure
+        ? "$https://farmaciaonlineweb.azurewebsites.net/images/noimage.png"// luego cambiamos esta url por la de 
+                                                                           //Azure
+        : $"https://farmaciaonlinedemo.blob.core.windows.net/categories/{ImageId}"; // blob en Azure
     }
 }
 

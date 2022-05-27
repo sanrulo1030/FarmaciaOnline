@@ -27,7 +27,7 @@ namespace FarmaciaOnline.Web.Controllers.API
             _configuration = configuration;
         }
 
-        // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost]
         [Route("CreateToken")]
         public async Task<IActionResult> CreateToken([FromBody] LoginViewModel model)
