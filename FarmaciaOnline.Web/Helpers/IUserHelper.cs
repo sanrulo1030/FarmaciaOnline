@@ -1,6 +1,8 @@
 ﻿using FarmaciaOnline.Web.Data.Entities;
+using FarmaciaOnline.Web.Enums;
 using FarmaciaOnline.Web.Models;
 using Microsoft.AspNetCore.Identity;
+using System;
 using System.Threading.Tasks;
 
 namespace FarmaciaOnline.Web.Helpers
@@ -22,6 +24,8 @@ namespace FarmaciaOnline.Web.Helpers
         Task LogoutAsync();
 
         Task<SignInResult> ValidatePasswordAsync(User user, string password);
+
+        Task<User> AddUserAsync(AddUserViewModel model, Guid imageId, UserType userType);
 
     }
 

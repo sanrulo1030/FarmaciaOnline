@@ -10,7 +10,7 @@
  <form asp-action="AddLaboratory">
  <div asp-validation-summary="ModelOnly" class="text-danger"></div>
  <input type="hidden" asp-for="IdMedicine" />
- <partial name="_City" />
+ <partial name="_Laboratory" />
  <div class="form-group">
  <input type="submit" value="Save" class="btn btn-primary" />
  <a asp-action="DetailsMedicine" asp-route-id="@Model.IdMedicine" class="btn btn-success">Back to List</a>
